@@ -15,6 +15,7 @@ import AppDownload from './assets/Components/AppDownload';
 import Login from './assets/Components/Login';
 import Contact from './assets/Components/Contact';
 import Resturant from './assets/Components/Resturant';
+import ScrollToTop from './assets/Components/ScrollToTop';
 // import ResturentDisplay from './assets/Components/ResturentDisplay';
 function App() {
   const [category, setCategory] = useState("All");
@@ -25,6 +26,7 @@ function App() {
     <>
     {showlogin?<Login setShowlogin={setShowlogin}/>:<></>}
     <div>
+      <ScrollToTop/>
      <Navbar setShowlogin={setShowlogin}/>
      <Routes>
       <Route path='/' element={<Home/>}/>
